@@ -7,12 +7,16 @@
 //
 
 #import "TipCalculatorAppDelegate.h"
+#import "TipCalculatorViewController.h"
 
 @implementation TipCalculatorAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    TipCalculatorViewController *vc = [[TipCalculatorViewController alloc] init];
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = nvc;
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
