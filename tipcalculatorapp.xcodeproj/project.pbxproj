@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		154CD8CA1943FF0A000EA1AD /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154CD8C81943FF0A000EA1AD /* SettingsViewController.m */; };
+		154CD8CB1943FF0A000EA1AD /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 154CD8C91943FF0A000EA1AD /* SettingsViewController.xib */; };
 		15C191F8193D82EF0008467C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C191F7193D82EF0008467C /* Foundation.framework */; };
 		15C191FA193D82EF0008467C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C191F9193D82EF0008467C /* CoreGraphics.framework */; };
 		15C191FC193D82EF0008467C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C191FB193D82EF0008467C /* UIKit.framework */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		154CD8C71943FF0A000EA1AD /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = ../SettingsViewController.h; sourceTree = "<group>"; };
+		154CD8C81943FF0A000EA1AD /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = ../SettingsViewController.m; sourceTree = "<group>"; };
+		154CD8C91943FF0A000EA1AD /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = ../SettingsViewController.xib; sourceTree = "<group>"; };
 		15C191F4193D82EF0008467C /* tipcalculatorapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipcalculatorapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C191F7193D82EF0008467C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		15C191F9193D82EF0008467C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +122,9 @@
 				15C19209193D82EF0008467C /* Images.xcassets */,
 				15C191FE193D82EF0008467C /* Supporting Files */,
 				15C19226193D84390008467C /* TipCalculatorViewController.h */,
+				154CD8C71943FF0A000EA1AD /* SettingsViewController.h */,
+				154CD8C81943FF0A000EA1AD /* SettingsViewController.m */,
+				154CD8C91943FF0A000EA1AD /* SettingsViewController.xib */,
 				15C19227193D84390008467C /* TipCalculatorViewController.m */,
 				15C19228193D84390008467C /* TipCalculatorViewController.xib */,
 			);
@@ -231,6 +239,7 @@
 				15C19202193D82EF0008467C /* InfoPlist.strings in Resources */,
 				15C1920A193D82EF0008467C /* Images.xcassets in Resources */,
 				15C1922A193D84390008467C /* TipCalculatorViewController.xib in Resources */,
+				154CD8CB1943FF0A000EA1AD /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +261,7 @@
 				15C19208193D82EF0008467C /* TipCalculatorAppDelegate.m in Sources */,
 				15C19229193D84390008467C /* TipCalculatorViewController.m in Sources */,
 				15C19204193D82EF0008467C /* main.m in Sources */,
+				154CD8CA1943FF0A000EA1AD /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +460,7 @@
 				15C19222193D82EF0008467C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15C19223193D82EF0008467C /* Build configuration list for PBXNativeTarget "tipcalculatorappTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +469,7 @@
 				15C19225193D82EF0008467C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

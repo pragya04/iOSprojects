@@ -5,8 +5,8 @@
 //  Created by Pragya  Pherwani on 6/2/14.
 //  Copyright (c) 2014 Pragya  Pherwani. All rights reserved.
 //
-
 #import "TipCalculatorViewController.h"
+#import "SettingsViewController.h"
 
 @interface TipCalculatorViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *billTextField;
@@ -34,6 +34,12 @@
 {
     [super viewDidLoad];
     [self updateValues];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Settings" style:UIBarButtonItemStylePlain target:self action:@selector(onSettingsButton)];
+
+}
+
+- (void)onSettingsButton {
+    [self.navigationController pushViewController:[[SettingsViewController alloc] init] animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,5 +60,25 @@
     float totalAmount = tipAmount + billAmount;
     self.tipLabel.text = [NSString stringWithFormat:@"$%0.2f", tipAmount];
     self.total.text = [NSString stringWithFormat:@"$%0.2f", totalAmount];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    NSLog(@"view will appear");
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    NSLog(@"view did appear");
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    int defaultTipIndex = [defaults integerForKey:@"default_tip_value"];
+    self.tipControl.selectedSegmentIndex = defaultTipIndex;
+
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    NSLog(@"view will disappear");
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    NSLog(@"view did disappear");
 }
 @end
